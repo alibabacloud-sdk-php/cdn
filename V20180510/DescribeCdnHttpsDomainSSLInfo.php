@@ -1,36 +1,22 @@
 <?php
 
-namespace AlibabaCloud\Cdn\V20141111;
+namespace AlibabaCloud\Cdn\V20180510;
 
 use AlibabaCloud\Rpc;
 
 /**
- * Api StartCdnDomain
+ * Api DescribeCdnHttpsDomainSSLInfo
  *
- * @method string getSecurityToken()
  * @method string getDomainName()
  * @method string getOwnerId()
  */
-class StartCdnDomain extends Rpc
+class DescribeCdnHttpsDomainSSLInfo extends Rpc
 {
     public $product = 'Cdn';
 
-    public $version = '2014-11-11';
+    public $version = '2018-05-10';
 
     public $method = 'POST';
-
-    /**
-     * @param string $securityToken
-     *
-     * @return $this
-     */
-    public function withSecurityToken($securityToken)
-    {
-        $this->data['SecurityToken'] = $securityToken;
-        $this->options['query']['SecurityToken'] = $securityToken;
-
-        return $this;
-    }
 
     /**
      * @param string $domainName
