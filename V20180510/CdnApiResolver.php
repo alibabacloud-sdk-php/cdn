@@ -1211,16 +1211,18 @@ class SetHttpHeaderConfig extends V20180510Rpc
 }
 
 /**
+ * @method string getSecurityToken()
+ * @method $this withSecurityToken($value)
  * @method string getDomainName()
  * @method $this withDomainName($value)
+ * @method string getWeight()
+ * @method $this withWeight($value)
  * @method string getCacheContent()
  * @method $this withCacheContent($value)
  * @method string getOwnerId()
  * @method $this withOwnerId($value)
  * @method string getTTL()
  * @method $this withTTL($value)
- * @method string getConfigId()
- * @method $this withConfigId($value)
  */
 class SetFileCacheExpiredConfig extends V20180510Rpc
 {
